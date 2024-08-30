@@ -24,6 +24,7 @@ class myPromise {
     //执行resolve与reject函数
     try {
       executor(this.resolve.bind(this), this.reject.bind(this))
+      // console.log(test)
     } catch (e) {
       this.reject(e)
     }
